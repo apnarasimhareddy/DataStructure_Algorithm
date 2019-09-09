@@ -17,12 +17,12 @@ class Circularly_Linked_List:
 
     def first(self):
         if self.is_empty():
-            raise Empty("Circularly Linked List is Empty")
+            raise Exception("Circularly Linked List is Empty")
         return self._head._element
 
     def last(self):
         if self.is_empty():
-            raise Empty("Circularly Linked List is Empty")
+            raise Exception("Circularly Linked List is Empty")
         return self._tail._element
 
     def enqueue(self,e):
